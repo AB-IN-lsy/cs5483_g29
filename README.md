@@ -1,15 +1,37 @@
-数据预处理: 
-1. 读取与类型检查: date从文本转为时间类型
-2. 缺失值处理: 数据集无空值
-3. 重复值去重: 无冗余数据
-4. 对每一行数据做工作日和周末的标记
-5. 出入境人口总数在15个关口每年的数量可视化
+# README
 
-   
-Notes：
+## **Data Preprocessing Overview**
 
-实际使用的数据，2023.1.1到2024.12.31两年整
+1. **Date Parsing and Type Checking**  
+   - Converted the `Date` column from string format to datetime format for proper temporal analysis.
 
-1. 根据旅客构成进行聚类
-2. 预测出入境人数
-3. 繁忙判定（分类
+2. **Missing Value Handling**  
+   - The dataset was checked for missing values and confirmed to be complete.
+
+3. **Duplicate Removal**  
+   - No redundant or duplicate records were found in the dataset.
+
+4. **Weekend and Weekday Annotation**  
+   - Each row was labeled as either a "Weekday" or "Weekend" to capture potential traffic patterns influenced by the day type.
+
+5. **Annual Traffic Visualization**  
+   - Visualized the total inbound and outbound passenger volumes across 15 control points for each year.
+
+---
+
+## **Notes**
+
+- The dataset spans exactly **two full years**, from **January 1, 2023** to **December 31, 2024**.
+
+---
+
+## **Planned Analytical Tasks**
+
+1. **Passenger Segmentation via Clustering**  
+   - Cluster travelers based on population composition across control points to identify behavioral patterns or latent groups.
+
+2. **Forecasting Inbound and Outbound Passenger Flows**  
+   - Build predictive models to estimate the number of people entering and leaving Hong Kong on a daily basis.
+
+3. **Busy Period Classification**  
+   - Develop a classification model to identify "busy days" at border control points, supporting early warnings and resource planning.
